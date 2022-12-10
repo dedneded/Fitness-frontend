@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Профиль сотрудника</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="scss/employee_acc_profile.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    </head>
+<body>
+  <div class="wrapper">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+          <div class="container-xl d-flex align-items-center">
+              <a class="navbar-brand mb-0 h1" href="#">
+                  <img src="scss/images/logo.png" alt="" width="94" height="87" />
+                  F-Фитнес    
+              </a>
+              
+              <a class="d-flex align-items-center gap-1 navbar-brand mb-0 link_hover" href="#">Иванов Иван Иванович 
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-logout" width="28" height="28" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2"></path>
+                      <path d="M7 12h14l-3 -3m0 6l3 -3"></path>
+                   </svg>
+              </a>
+              
+          </div>
+  </header>
+  <main>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container d-flex justify-content-center gap-5">
+            <a class="navbar-brand link_hover" href="#">Расписание</a>
+            <a class="navbar-brand link_hover" href="employee_acc_timetable.html">График</a>
+            <a class="navbar-brand link_hover active_page" href="#">Профиль</a>
+          </div>
+      </nav>  
+   
+      
+      <section class="personal_data">
+          <div class="container py-5">
+            <div class="row">
+              <div class="col">
+                <nav aria-label="breadcrumb" class="bg-light rounded-3 p-3 mb-4">
+                  <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item">Кабинет сотрудника</li>
+                    <li class="breadcrumb-item">Профиль</li>
+                  </ol>
+                </nav>
+              </div>
+            </div>
+        
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="card mb-4">
+                  <div class="card-body text-center photo">
+                    
+                    <img src="scss/images/profile_personal_data/photo.png" class="rounded-circle img-fluid" />
+                    <h5 class="my-3">Иванов Иван Иванович</h5>
+                    
+                    <div class="d-flex justify-content-center mb-2">
+                      <button type="button" class="btn btn-warning">Изменить</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <p class="mb-0 title">Должность</p>
+                      </div>
+                      <div class="col-sm-9">
+                        <p class="text-muted mb-0">Тренер по самбо</p>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <p class="mb-0 title">Дата рождения</p>
+                      </div>
+                      <div class="col-sm-9">
+                        <p class="text-muted mb-0">29.08.1999</p>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <p class="mb-0 title">Телефон</p>
+                      </div>
+                      <div class="col-sm-9">
+                        <p class="text-muted mb-0">8 (999) 000-00-00</p>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <p class="mb-0 title">Почта</p>
+                      </div>
+                      <div class="col-sm-9">
+                        <p class="text-muted mb-0">email@mail.ru</p>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <p class="mb-0 title">Квалификация</p>
+                      </div>
+                      <div class="col-sm-9">
+                        <p class="text-muted mb-0">Мастер спорта по боксу</p>
+                      </div>
+                      
+                    </div>
+                    <hr>
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <p class="mb-0 title">Дополнительно</p>
+                      </div>
+                      <div class="col-sm-9">
+                        <p class="text-muted mb-0">Стаж работы 10 лет</p>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </section>        
+     
+     
+  </main>
+  <div class="container-fluid bg-black">
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-5 border-top">
+        
+    
+        <ul class="nav col-md-10 justify-content-start">
+          <li class="nav-item"><a href="#" class="nav-link px-2 footer_menu">Расписание</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 footer_menu">График</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 footer_menu">Профиль</a></li>
+          
+        </ul>
+        <p class="col-md-2 mb-0 text-muted">
+          <a class="align-items-center gap-1 footer_exit" href="#">Иванов Иван Иванович 
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-logout" width="28" height="28" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2"></path>
+                <path d="M7 12h14l-3 -3m0 6l3 -3"></path>
+             </svg>
+          </a>
+        </p>
+    
+        
+      </footer>
+    </div>
+
+  </div>
+  
+     
+  </div>
+    
+</body>
+</html>

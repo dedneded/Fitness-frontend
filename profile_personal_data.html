@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Личная информация</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="scss/profile_personal_data.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        
+    </head>
+<body>
+    <header class="header">
+        <div class="container__header">
+            <div class="header__body">
+                <div class="logo">
+                    <a href="index.html"><img src="scss/images/logo.png" alt="" width="94" height="87"/></a>
+                    <div class="logo__title">
+                        <a href="index.html"><h1>F-Фитнес</h1></a>
+                        <a href="profile.html"><h3>Личный кабинет</h3></a>
+                    </div>
+                    
+                </div>
+                <div class="section">
+                    <a href="tel:80000000000" class="phone">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone-call" width="28" height="28" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"></path>
+                            <path d="M15 7a2 2 0 0 1 2 2"></path>
+                            <path d="M15 3a6 6 0 0 1 6 6"></path>
+                         </svg>
+                        <span>8 (000) 000-00-00</span> 
+                    </a>
+                    <a href="#" class="social-links"> 
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="28" height="28" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <rect x="4" y="4" width="16" height="16" rx="4"></rect>
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <line x1="16.5" y1="7.5" x2="16.5" y2="7.501"></line>
+                         </svg>
+                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-vk" width="28" height="28" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M14 19h-4a8 8 0 0 1 -8 -8v-5h4v5a4 4 0 0 0 4 4h0v-9h4v4.5l.03 -.004a4.531 4.531 0 0 0 3.97 -4.496h4l-.342 1.711a6.858 6.858 0 0 1 -3.658 4.789h0a5.34 5.34 0 0 1 3.566 4.111l.434 2.389h0h-4a4.531 4.531 0 0 0 -3.97 -4.496v4.5z"></path>
+                         </svg>
+                    </a>
+                </div>
+                <div class="section_profile">
+                    <a href="login.html" class="profile">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle" width="28" height="28" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <circle cx="12" cy="12" r="9"></circle>
+                            <circle cx="12" cy="10" r="3"></circle>
+                            <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855"></path>
+                        </svg>
+                        <span class="profile__title">Войти</span>
+                    </a>
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
+                </div>
+                
+                <nav class="header__menu">
+                    <ul class="header__list">
+                        <li>
+                            <a class="header_link" href="#">Главная</a>
+                        </li>
+                        <li>
+                            <a class="header_link" href="halls.html">Залы</a>
+                        </li>
+                        <li>
+                            <a class="header_link" href="trainers.html">Тренеры</a>
+                        </li>
+                        <li>
+                            <a class="header_link" href="sales.html">Акции</a>
+                        </li>
+                        <li>
+                            <a class="header_link" href="subscriptions.html">Абонементы</a>
+                        </li>
+                        <li>
+                            <a class="header_link" href="">Отзывы</a>
+                        </li>
+                        <li class="tablet_visible">
+                            <a class="header_link active" href="profile.html">Профиль</a>
+                        </li>
+                        <li class="tablet_visible">
+                            <a class="header_link" href="#">Расписание</a>
+                        </li>
+                        <li class="tablet_visible">
+                            <a class="header_link" href="profile_favourites.html">Избранное</a>
+                        </li>
+                        <li class="tablet_visible">
+                            <a class="header_link " href="profile_history_subscriptions.html">История</a>
+                        </li>
+                        <li class="tablet_visible ">
+                            <a class="header_link " href="#">Корзина</a>
+                        </li>
+                        
+                                
+                    </ul>
+                </nav>         
+            </div>  
+        </div>    
+    </header> 
+    <main>
+        <div class="header_bottom">
+            <div class="header_bottom top tablet">
+                <div class="header_bottom__content">
+                
+                    <ul>
+                        <li class="profile"><a href="profile.html" class="active">Профиль</a></li>
+                        <li class="timetable"><a href="#">Расписание</a></li>
+                        <li class="favourites"><a href="profile_favourites.html">Избранное</a></li>
+                        <li class="history"><a href="profile_history_visits.html">История</a></li>
+                        <li class="cart"><a href="profile_cart.html">Корзина</a></li>
+                        
+                </div> 
+            </div>
+            
+            <div class="header_bottom bottom">
+                <span class="bottom__title">Профиль</span>
+                <ul class="breadcrumb">
+                    
+                    <li class="breadcrumb__item"><a href="#">Личный кабинет</a></li>
+                    <li class="breadcrumb__item"><a href="#">Профиль</a></li>
+                    <li class="breadcrumb__item">Личная информация</li>
+                </ul>
+            </div>
+           
+        </div>
+        <section class="personal_data">
+            <h2>Личная информация</h2>
+            <div class="personal_data__block">
+                <h3>Персональные данные</h3>
+                <div class="personal_data__content">
+                    <div class="personal_data__titles">
+                    
+                        <span>Фамилия:</span>
+                        <span>Имя:</span>
+                        <span>Отчество:</span>
+                        <span>Дата рождения:</span>
+                        <span>Телефон:</span>
+                        <span>Почта:</span>
+                    </div>
+                    <div class="personal_data__inf">
+                        <span>Иванов</span>
+                        <span>Иван</span>
+                        <span>Иванович</span>
+                        <span>29.08.1999</span>
+                        <span>8 (999) 000-00-00</span>
+                        <span>email@mail.ru</span>
+                    </div>
+                    <div class="personal_data__photo">
+                        <img src="scss/images/profile_personal_data/photo.png" alt="" width="280" height="280"/>
+                        <a class="photo__button" href="">Изменить</a>
+                        
+                    </div>
+                   
+                </div>
+                
+                <a class="personal_data__button button" href="">Изменить</a>
+                
+            </div>
+        </section>
+        <section class="cards">
+            <div class="cards__block">
+                <h3>Привязанные карты</h3>
+                <div class="cards__content">У вас нет привязанных карт!</div>
+                <a class="cards__button button" href="">Привязать карту</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container__footer">
+            <div class="footer__content">
+            
+                <div class="footer__row">
+                    <div class="footer__col info">
+                        <a href="tel:80000000000" class="footer__phone">8 (000) 000-00-00</a>
+                        <div class="footer__timetable">С 9:00-23:00</div>
+                        <div class="footer__logo">
+                            <a href="#"><img src="scss/images/logo.png" alt="" width="64" height="57"/></a>
+                            <a href="" class="footer__logo title">F-Фитнес</a>
+                        </div>
+                    </div>
+                    <div class="footer__col">
+                        <ul class="footer__col__list">
+                            <li class="footer__col__item"><a href="#">Личный кабинет</a></li>
+                            <li class="footer__col__item"><a href="#">Залы</a></li>
+                            <li class="footer__col__item"><a href="#">Тренеры</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <ul class="footer__col__list">
+                            <li class="footer__col__item"><a href="#">Акции</a></li>
+                            <li class="footer__col__item"><a href="#">Абонементы</a></li>
+                            <li class="footer__col__item"><a href="#">Отзывы</a></li>
+     
+                            
+                        </ul>
+                    </div>
+                    <div class="footer__col tablet">
+                        <h4>Соцсети</h4>
+                        <div class="social_links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        
+        
+    </footer>
+    <script type="text/javascript" src="js/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="js/burger.js"></script>
+</body>
+</html>
