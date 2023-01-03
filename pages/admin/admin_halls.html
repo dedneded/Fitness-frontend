@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Залы</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../css/admin_style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    </head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+                <div class="container-xl d-flex align-items-center">
+                    <a class="navbar-brand mb-0 h1" href="#">
+                        <img src="../../images/logo.png" alt="" width="94" height="87" />
+                        F-Фитнес    
+                    </a>
+                    
+                    <a class="d-flex align-items-center gap-1 navbar-brand  link_hover mb-2" href="#">Иванов Иван Иванович 
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-logout" width="28" height="28" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2"></path>
+                            <path d="M7 12h14l-3 -3m0 6l3 -3"></path>
+                         </svg>
+                    </a>
+                    
+                </div>
+        </header> 
+        <main>
+            <nav class="navbar navbar-expand-xl navbar-light bg-light  ">
+                <div class="container d-flex justify-content-center gap-xxl-5 gap-xl-4 gap-sm-2">
+                    
+                    <div class="dropdown">
+                      <a class="  navbar-brand link_hover dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Посещения
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="admin_visits.html">Посещения по абонементу</a></li>
+                          <li><a class="dropdown-item" href="admin_visits.html">Посещения услуг</a></li>
+                          
+                          
+                      </ul>
+                  </div>
+                  
+                    <div class="dropdown">
+                        <a class="  navbar-brand link_hover dropdown-toggle text-decoration-underline" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Каталог
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="admin_halls.html">Залы</a></li>
+                            <li><a class="dropdown-item" href="admin_sport-services.html">Спорт-направления</a></li>
+                            <li><a class="dropdown-item" href="admin_services.html">Услуги</a></li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <a class="  navbar-brand link_hover" href="admin_subscriptions.html">Абонементы</a> 
+                    <a class="  navbar-brand link_hover" href="#">Клиенты</a>
+                    
+                    <div class="dropdown">
+                      <a class="  navbar-brand link_hover dropdown-toggle " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Сотрудники
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="admin_employees.html">Все сотрудники</a></li>
+                          <li><a class="dropdown-item" href="#">Расписание</a></li>
+                          <li><a class="dropdown-item" href="admin_roles.html">Должности</a></li>
+                      </ul>
+                  </div>
+                    <a class=" navbar-brand link_hover" href="admin_sales.html">Акции</a>
+                    <a class="  navbar-brand link_hover" href="admin_reviews.html">Отзывы</a>
+                    <div class="dropdown">
+                      <a class="  navbar-brand link_hover dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Дополнительно
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="admin_manage_main.html">Настройка главной</a></li>
+                        <li><a class="dropdown-item" href="#">Профиль</a></li>
+                          
+                      </ul>
+                  </div>
+                   
+                </div>
+            </nav>
+            
+           
+             
+            <div class="container-lg mt-4 pb-4">
+                <nav aria-label="breadcrumb" class="bg-light shadow rounded-3 py-3">
+                    <div class="row px-3 ">
+                        <ol class="breadcrumb  col-xl-6 col-sm-11  px-3 px-sm-2 my-auto">
+                            <li class="breadcrumb-item">Кабинет администратора</li>
+                            <li class="breadcrumb-item">Залы</li>
+                        </ol>
+                        <a class = " text-end col-xl-6 col-sm-1 " href="admin_hall.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plus" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <line x1="12" y1="5" x2="12" y2="19"></line>
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                             </svg>
+                        </a>
+                    </div>
+                </nav>    
+                  
+            </div> 
+               
+            <div class="container-lg">
+                <form class="bg-light shadow p-3 px-4 rounded-3">
+                    <div class="row">
+                        <div class="form-group col-xxl-5 col-xl-3">
+                            <label for="emp_id">Id</label>
+                            <input type="text" id="emp_id" class="form-control" id="id_employee" >
+                            
+                        </div>
+                        <div class="form-group col-xxl-5 col-xl-9">
+                            <label for="emp_name">Название</label>
+                            <input type="text" id="emp_name" class="form-control">
+                        </div>
+                        
+                        <div class="form-group col-xxl-3 col-xl-6 mt-xl-2">
+                            <label for="price_from_block">Расписание в будни</label>
+                            <div class="input-group" id="time_weekdays">
+                                
+                                <span class="input-group-text rounded-start" id="time_from_weekdays">от</span>
+                                <input type="time" class="form-control"  aria-describedby="price_from">
+                                <span class="input-group-text " id="time_until_weekdays">до</span>
+                                <input type="time" class="form-control"  aria-describedby="price_until">
+                                   
+                                  
+                            </div> 
+                            
+                           
+                        </div>
+                        <div class="form-group col-xxl-3 col-xl-6 mt-xl-2">
+                            <label for="price_from_block">Расписание в выходные</label>
+                            <div class="input-group" id="time_weekends">
+                                
+                                <span class="input-group-text rounded-start" id="time_from_weekends">от</span>
+                                <input type="time" class="form-control"  aria-describedby="price_from">
+                                <span class="input-group-text " id="time_until_weekends">до</span>
+                                <input type="time" class="form-control"  aria-describedby="price_until">
+                                   
+                                  
+                            </div> 
+                            
+                           
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="d-flex flex-row-reverse mt-4">
+                        
+                        <div class="form-group  ">
+                            <button type="button" class="btn btn-warning custom_butt ">Применить</button>
+    
+                        </div>
+                        <div class="form-group">
+                            <button type="button" class="btn btn-danger custom_butt mx-3">Сбросить</button>
+                            
+    
+                        </div>   
+                    </div>
+                </form>
+            </div>  
+            <div class="container-lg  ">
+                <form class="bg-light shadow p-3 px-4 rounded-3 mt-4 overflow-auto">
+                    
+                    
+                    <table class="table table-hover ">
+                        <thead>
+                            <tr>
+                                <th scope="col"><a href="" class=" text-decoration-none text-warning link_hover"><span class="fw-bold">&#8645;&nbsp;Id</span></a></th>
+                                <th scope="col"><a href="" class=" text-decoration-none text-black link_hover"><span class="fw-bold">&#8645;&nbsp;Название</span></a></th>
+                                <th scope="col"><a href="" class=" text-decoration-none text-black link_hover"><span class="fw-bold">&#8645;&nbsp;Расписание</span></a></th>
+                                <th scope="col"><a href="" class=" text-decoration-none text-black link_hover"><span class="fw-bold">&#8645;&nbsp;Расписание&nbsp;выходные</span></a></th>
+                                <th scope="col"><a href="" class=" text-decoration-none text-black link_hover"><span class="fw-bold">&#8645;&nbsp;Количество&nbsp;направлений</span></a></th>
+                                <th scope="col"><a href="" class=" text-decoration-none text-black link_hover"><span class="fw-bold">&#8645;&nbsp;Max&nbsp;посетителей</span></a></th>
+                                <th scope="col"><a href="" class=" text-decoration-none text-black link_hover"><span class="fw-bold">&#8645;&nbsp;Рейтинг</span></a></th>
+                                <th scope="col"><a href="" class=" text-decoration-none text-black link_hover"><span class="fw-bold">&#8645;&nbsp;Количество&nbsp;посещений</span></a></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                            <tr>
+                              <th scope="row">1</th>  
+                              <td><a class="text-decoration-none text-black " href="admin_hall.html">Зал единоборств</a></td>
+                              <td><a class="text-decoration-none text-black" href="admin_hall.html">10:00 - 18:00</a></td>
+                              <td><a class="text-decoration-none text-black" href="admin_hall.html">10:00 - 18:00</a></td>
+                              <td><a class="text-decoration-none text-black" href="admin_hall.html">6</a></td>
+                              <td><a class="text-decoration-none text-black" href="admin_hall.html">100</a></td>
+                              <td><a class="text-decoration-none text-black" href="admin_hall.html">Высокий</a></td>
+                              <td><a class="text-decoration-none text-black" href="admin_hall.html">100</a></td>
+                              
+                              
+                            </tr>
+                            <tr>
+                              <th scope="row">2</th>
+                              <td><a class="text-decoration-none text-black" href="#">Тренажерный зал</a></td>
+                              <td><a class="text-decoration-none text-black" href="#">10:00 - 18:00</a></td>
+                              <td><a class="text-decoration-none text-black" href="#">10:00 - 18:00</a></td>
+                              <td><a class="text-decoration-none text-black" href="#">6</a></td>
+                              <td><a class="text-decoration-none text-black" href="#">100</a></td>
+                              <td><a class="text-decoration-none text-black" href="#">Высокий</a></td>
+                              <td><a class="text-decoration-none text-black" href="admin_hall.html">100</a></td>
+                              
+                            </tr>
+                            <tr>
+                              <th scope="row">3</th>
+                              <td><a class="text-decoration-none text-black" href="#">Кардиозона</a></td>
+                              <td><a class="text-decoration-none text-black" href="#">10:00 - 18:00</a></td>
+                              <td><a class="text-decoration-none text-black" href="#">10:00 - 18:00</a></td>
+                              <td><a class="text-decoration-none text-black" href="#">6</a></td>
+                              <td><a class="text-decoration-none text-black" href="#">100</a></td>
+                              <td><a class="text-decoration-none text-black" href="#">Высокий</a></td>
+                              <td><a class="text-decoration-none text-black" href="admin_hall.html">100</a></td>
+                              
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td><a class="text-decoration-none text-black" href="#">Студия баланса</a></td>
+                                <td><a class="text-decoration-none text-black" href="#">10:00 - 18:00</a></td>
+                                <td><a class="text-decoration-none text-black" href="#">10:00 - 18:00</a></td>
+                                <td><a class="text-decoration-none text-black" href="#">6</a></td>
+                                <td><a class="text-decoration-none text-black" href="#">100</a></td>
+                                <td><a class="text-decoration-none text-black" href="#">Высокий</a></td>
+                                <td><a class="text-decoration-none text-black" href="admin_hall.html">100</a></td>
+                                
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td><a class="text-decoration-none text-black" href="#">Зона стретчинга</a></td>
+                                <td><a class="text-decoration-none text-black" href="#">10:00 - 18:00</a></td>
+                                <td><a class="text-decoration-none text-black" href="#">10:00 - 18:00</a></td>
+                                <td><a class="text-decoration-none text-black" href="#">6</a></td>
+                                <td><a class="text-decoration-none text-black" href="#">100</a></td>
+                                <td><a class="text-decoration-none text-black" href="#">Высокий</a></td>
+                                <td><a class="text-decoration-none text-black" href="admin_hall.html">100</a></td>
+                                
+                            </tr>
+                            <tr>
+                                <th scope="row">6</th>
+                                <td><a class="text-decoration-none text-black" href="#">Водный комплекс</a></td>
+                                <td><a class="text-decoration-none text-black" href="#">10:00 - 18:00</a></td>
+                                <td><a class="text-decoration-none text-black" href="#">10:00 - 18:00</a></td>
+                                <td><a class="text-decoration-none text-black" href="#">6</a></td>
+                                <td><a class="text-decoration-none text-black" href="#">100</a></td>
+                                <td><a class="text-decoration-none text-black" href="#">Высокий</a></td>
+                                <td><a class="text-decoration-none text-black" href="admin_hall.html">100</a></td>
+                               
+                            </tr>
+                            <tr>
+                                <th scope="row">7</th>
+                                <td><a class="text-decoration-none text-black" href="#">Фитнес-кафе</a></td>
+                                <td><a class="text-decoration-none text-black" href="#">10:00 - 18:00</a></td>
+                                <td><a class="text-decoration-none text-black" href="#">10:00 - 18:00</a></td>
+                                <td><a class="text-decoration-none text-black" href="#">6</a></td>
+                                <td><a class="text-decoration-none text-black" href="#">100</a></td>
+                                <td><a class="text-decoration-none text-black" href="#">Высокий</a></td>
+                                <td><a class="text-decoration-none text-black" href="admin_hall.html">100</a></td>
+                                
+                            </tr>
+                            <tr>
+                                <th scope="row">8</th>
+                                <td><a class="text-decoration-none text-black" href="#">Массажный кабинет</a></td>
+                                <td><a class="text-decoration-none text-black" href="#">10:00 - 18:00</a></td>
+                                <td><a class="text-decoration-none text-black" href="#">10:00 - 18:00</a></td>
+                                <td><a class="text-decoration-none text-black" href="#">6</a></td>
+                                <td><a class="text-decoration-none text-black" href="#">100</a></td>
+                                <td><a class="text-decoration-none text-black" href="#">Высокий</a></td>
+                                <td><a class="text-decoration-none text-black" href="admin_hall.html">100</a></td>
+                                
+                            </tr>
+                            <tr>
+                                <th scope="row">9</th>
+                                <td><a class="text-decoration-none text-black" href="#">Кабинет диетолога</a></td>
+                                <td><a class="text-decoration-none text-black" href="#">10:00 - 18:00</a></td>
+                                <td><a class="text-decoration-none text-black" href="#">10:00 - 18:00</a></td>
+                                <td><a class="text-decoration-none text-black" href="#">6</a></td>
+                                <td><a class="text-decoration-none text-black" href="#">100</a></td>
+                                <td><a class="text-decoration-none text-black" href="#">Высокий</a></td>
+                                <td><a class="text-decoration-none text-black" href="admin_hall.html">100</a></td>
+                                
+                            </tr>
+                            <tr>
+                                <th scope="row">10</th>
+                                <td><a class="text-decoration-none text-black" href="#">Зал единоборств</a></td>
+                                <td><a class="text-decoration-none text-black" href="#">10:00 - 18:00</a></td>
+                                <td><a class="text-decoration-none text-black" href="#">10:00 - 18:00</a></td>
+                                <td><a class="text-decoration-none text-black" href="#">6</a></td>
+                                <td><a class="text-decoration-none text-black" href="#">100</a></td>
+                                <td><a class="text-decoration-none text-black" href="#">Высокий</a></td>
+                                <td><a class="text-decoration-none text-black" href="admin_hall.html">100</a></td>
+                                
+                            </tr>
+                        </tbody>
+                    </table>
+                    <nav aria-label="page_navigation mt-5">
+                        <ul class="pagination justify-content-center ">
+                          <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                              <span aria-hidden="true">&laquo;</span>
+                              
+                            </a>
+                          </li>
+                          <li class="page-item "><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                              <span aria-hidden="true">&raquo;</span>
+                              
+                            </a>
+                          </li>
+                        </ul>
+                    </nav>
+                </form>
+            </div>
+        </main>
+        <div class="container-fluid bg-black mt-5">
+            <div class="container-xl">
+              <footer class="d-flex flex-wrap justify-content-between align-items-center py-3  my-4 border-top">
+                
+                
+                <ul class="nav col-lg-9 col-sm-12   justify-content-start">
+                  <li class="nav-item"><a href="admin_visits.html" class="nav-link px-2 text-white link_hover">Посещения</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link px-2 text-white link_hover">Каталог</a></li>
+                  <li class="nav-item"><a href="admin_subscriptions.html" class="nav-link px-2 text-white link_hover">Абонементы</a></li>
+                  <li class="nav-item"><a href="admin_clients.html" class="nav-link px-2 text-white link_hover">Клиенты</a></li>
+                  <li class="nav-item"><a href="admin_employees.html" class="nav-link px-2 text-white link_hover">Сотрудники</a></li>
+                  <li class="nav-item"><a href="admin_sales.html" class="nav-link px-2 text-white link_hover">Акции</a></li>
+                  <li class="nav-item"><a href="admin_reviews.html" class="nav-link px-2 text-white link_hover">Отзывы</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link px-2 text-white link_hover">Дополнительно</a></li>
+                  
+                  
+                </ul>
+                <p class="text-lg-end text-md-start col-lg-3 col-sm-12 px-xl-0 py-xl-0 px-sm-2 py-sm-2 mb-0 text-muted">
+                  <a href="#" class="align-items-center gap-1 text-white text-decoration-none link_hover" >Иванов Иван Иванович 
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-logout" width="28" height="28" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2"></path>
+                        <path d="M7 12h14l-3 -3m0 6l3 -3"></path>
+                     </svg>
+                  </a>
+                </p>
+            
+                
+              </footer>
+            </div>
+        </div>
+    </div> 
+    <script type="text/javascript" src="../../bootstrap/js/bootstrap.bundle.min.js"></script> 
+</body>
+</html>

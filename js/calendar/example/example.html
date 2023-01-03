@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+  <script type="text/javascript" src="../js/jquery-3.6.1.min.js"></script>
+  <script src="../../bootstrap/js/bootstrap.min.js"></script>
+  <script src="../node_modules/moment/min/moment-with-locales.min.js"></script>
+  <script src="../node_modules/jquery-touchswipe/jquery.touchSwipe.min.js"></script>
+  <script src="../dist/js/jquery-calendar.min.js"></script>
+  <link rel="stylesheet" href="../dist/css/jquery-calendar.min.css">
+  <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free-webfonts/css/fontawesome.css">
+  <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free-webfonts/css/fa-solid.css">
+  <title>Calendar</title>
+</head>
+<body class="bg-black ">
+  <script>
+    $(document).ready(function(){
+      moment.locale('ru');
+      var now = moment();
+      /**
+       * Many events
+       */
+      var events = [
+        {
+          start: now.startOf('week').add(9, 'h').format('X'),
+          end: now.startOf('week').add(12, 'h').format('X'),
+          title: 'Самбо',
+          content: 'Занятие по самбо для детей в зале единоборств с 9:00 до 12:00',
+          category:'Самбо'
+        },
+        
+        {
+          start: now.startOf('week').add(11, 'h').format('X'),
+          end: now.startOf('week').add(12, 'h').format('X'),
+          title: 'Кикбоксинг',
+          content: 'Занятие по кикбоксингу с 11:00 до 12:00',
+          category:'Кикбоксинг'
+        },
+        
+        {
+          start: now.startOf('week').add(1, 'days').add(9, 'h').format('X'),
+          end: now.startOf('week').add(1, 'days').add(10, 'h').format('X'),
+          title: 'Самбо',
+          content: 'Занятие по самбо для детей в зале единоборств с 9:00 до 10:00',
+          category:'Самбо'
+        },
+        {
+          start: now.startOf('week').add(1, 'days').add(11, 'h').format('X'),
+          end: now.startOf('week').add(1, 'days').add(12, 'h').format('X'),
+          title: 'Грэмплинг и джиу-джитсу',
+          content: 'Занятие по рэмплингу и джиу-джитсу с 11:00 до 12:00',
+          category:'Грэмплинг и джиу-джитсу'
+        },
+        {
+          start: now.startOf('week').add(2, 'days').add(9, 'h').format('X'),
+          end: now.startOf('week').add(2, 'days').add(10, 'h').format('X'),
+          title: 'Бокс',
+          content: 'Занятия по боксу с 9:00 до 10:00',
+          category:'Бокс'
+        },
+        {
+          start: now.startOf('week').add(2, 'days').add(9, 'h').format('X'),
+          end: now.startOf('week').add(2, 'days').add(10, 'h').format('X'),
+          title: 'Айкидо и саньда',
+          content: 'Занятия по айкидо и саньда с 9:00 до 10:00',
+          category:'Айкидо и саньда'
+        },
+        {
+          start: now.startOf('week').add(2, 'days').add(10, 'h').format('X'),
+          end: now.startOf('week').add(2, 'days').add(11, 'h').format('X'),
+          title: 'ММА и панкратион',
+          content: 'Занятие по ММА и панкратион с 10:00 до 11',
+          category:'ММА и панкратион'
+        },
+        
+      ];
+
+      /**
+       * A daynote
+       */
+      
+
+      /**
+       * Init the calendar
+       */
+      var calendar = $('#calendar').Calendar({
+        locale: 'ru',
+        weekday: {
+          timeline: {
+            intervalMinutes: 60,
+            fromHour: 9
+          }
+        },
+        events: events,
+        
+      }).init();
+
+      /**
+       * Listening for events
+       */
+
+      $('#calendar').on('Calendar.init', function(event, instance, before, current, after){
+        console.log('event : Calendar.init');
+        console.log(instance);
+        console.log(before);
+        console.log(current);
+        console.log(after);
+      });
+      $('#calendar').on('Calendar.daynote-mouseenter', function(event, instance, elem){
+        console.log('event : Calendar.daynote-mouseenter');
+        console.log(instance);
+        console.log(elem);
+      });
+      $('#calendar').on('Calendar.daynote-mouseleave', function(event, instance, elem){
+        console.log('event : Calendar.daynote-mouseleave');
+        console.log(instance);
+        console.log(elem);
+      });
+      $('#calendar').on('Calendar.event-mouseenter', function(event, instance, elem){
+        console.log('event : Calendar.event-mouseenter');
+        console.log(instance);
+        console.log(elem);
+      });
+      $('#calendar').on('Calendar.event-mouseleave', function(event, instance, elem){
+        console.log('event : Calendar.event-mouseleave');
+        console.log(instance);
+        console.log(elem);
+      });
+      $('#calendar').on('Calendar.daynote-click', function(event, instance, elem, evt){
+        console.log('event : Calendar.daynote-click');
+        console.log(instance);
+        console.log(elem);
+        console.log(evt);
+      });
+      $('#calendar').on('Calendar.event-click', function(event, instance, elem, evt){
+        console.log('event : Calendar.event-click');
+        console.log(instance);
+        console.log(elem);
+        console.log(evt);
+      });
+    });
+  </script>
+  
+  <div class="container-fluid px-4 ">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1 class="text-white mt-5 mb-3">Расписание занятий в зале единоборств</h1>
+        <div id="calendar"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
